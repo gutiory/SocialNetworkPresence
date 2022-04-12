@@ -18,9 +18,9 @@ object Server {
 
   def stream[F[_]: Async]: Stream[F, Nothing] = {
     for {
-      client       <- Stream.resource(EmberClientBuilder.default[F].build)
-      snGraphApi    = SNGraphApi.impl[F](client)
-      socialInfoAlg = SocialInfo.impl[F](snGraphApi)
+      client        <- Stream.resource(EmberClientBuilder.default[F].build)
+      snGraphApi     = SNGraphApi.impl[F](client)
+      socialInfoAlg <- Stream.eval(SocialInfo.impl[F](snGraphApi))
 
       // Combine Service Routes into an HttpApp.
       // Can also be done via a Router if you

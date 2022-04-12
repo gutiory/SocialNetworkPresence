@@ -10,6 +10,7 @@ lazy val root = (project in file("."))
       "org.http4s"                  %% "http4s-circe"        % "0.23.10",
       "org.http4s"                  %% "http4s-dsl"          % "0.23.10",
       "io.circe"                    %% "circe-generic"       % "0.14.1",
+      "io.chrisdavenport"           %% "mules"               % "0.5.0",
       "com.softwaremill.sttp.tapir" %% "tapir-core"          % "0.20.1",
       "com.softwaremill.sttp.tapir" %% "tapir-json-circe"    % "0.20.1",
       "com.softwaremill.sttp.tapir" %% "tapir-http4s-server" % "0.20.1",

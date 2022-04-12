@@ -42,7 +42,7 @@ class SocialInfoSpec extends CatsEffectSuite {
 
   }
 
-  val socialInfo = SocialInfo.impl(snApi)
+  val socialInfo = SocialInfo.impl(snApi).unsafeRunSync()
 
   test("Get total connections from response") {
 

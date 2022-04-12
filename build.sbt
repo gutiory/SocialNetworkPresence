@@ -17,6 +17,7 @@ lazy val root = (project in file("."))
       "com.softwaremill.sttp.tapir" %% "tapir-enumeratum"    % "0.20.1",
       "com.beachape"                %% "enumeratum"          % "1.7.0",
       "com.beachape"                %% "enumeratum-circe"    % "1.7.0",
+      "com.alejandrohdezma"         %% "http4s-munit"        % "0.9.3"  % Test,
       "org.scalameta"               %% "munit"               % "0.7.29" % Test,
       "org.typelevel"               %% "munit-cats-effect-3" % "1.0.7"  % Test,
       "ch.qos.logback"               % "logback-classic"     % "1.2.10" % Runtime,

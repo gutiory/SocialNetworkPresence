@@ -1,0 +1,14 @@
+*.class
+*.log
+
+.bsp
+.history
+.metals
+.vscode
+project/project
+project/target
+project/metals.sbt
+target
+
+.scalafix.conf
+.scalafmt.conf
